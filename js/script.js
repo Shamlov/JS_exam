@@ -62,8 +62,14 @@ function showInfo(event) {
         return
     }
     let index = ++event.target.dataset.index
-    console.log(outerData.drinks[index].strIngredient1) 
-    // alert(`Ингридиенты: ${outerData}`)    // покажу через простой алерт
 
-    console.log(index)
+    let IngredientsArr = []     // массив ингредиентов
+    for(let i = 1; i <= 15; i++ ) {
+    if(!eval('outerData.drinks[index].strIngredient' + i)) {
+        break           // выходим когда ингридиенты закончились в объекте
+    }
+    IngredientsArr.push(eval('outerData.drinks[index].strIngredient' + i))
+    }
+
+    alert(`Ингридиенты: ${IngredientsArr.join(', ')}`)    // покажу через простой алерт
 }
