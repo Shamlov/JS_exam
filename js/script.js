@@ -19,6 +19,7 @@ let app = document.querySelector('#app')
 app.innerHTML = `
     <div class="container-md">
         <p class="fs-3 text-center">Для просмотра карты коктейлей, нажмите на кнопку </p>
+        <p class="fs-3 text-center text-danger">!!!! вопрос . почему после клика ок модального окна происходит прокрутка страницы вврех </p>
         <div class="row">
             <div class="col-4 mb-4">
                 <img class="logo img-fluid" src="images/vecteezy_lemonade-png-with-ai-generated_25065159.png" alt="rtyuio">
